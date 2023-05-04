@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.Button?>
+<GridPane fx:controller="com.houssein_rachini.exchange.rates.Rates"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" stylesheets="@rates.css"
+          vgap="10" prefHeight="475.0"
+          prefWidth="600.0" >
+    <Label text="LBP Exchange Rate" textAlignment="CENTER" styleClass="header" GridPane.columnSpan="2" GridPane.halignment="CENTER"/>
+    <Label text="Buy USD Rate" styleClass="value-label" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+    <Label fx:id="buyUsdRateLabel" text="Buy Rate" styleClass="value" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+    <Label text="Sell USD Rate" styleClass="value-label" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+    <Label fx:id="sellUsdRateLabel" text="Sell Rate" styleClass="value" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+    <Separator orientation="HORIZONTAL" GridPane.RowIndex="6" GridPane.columnIndex="0" GridPane.columnSpan="2"/>
+
+    <Label text="USD Amount:" styleClass="value-label" GridPane.columnIndex="0" GridPane.rowIndex="7"/>
+    <TextField fx:id="usdTextField" GridPane.columnIndex="0" GridPane.rowIndex="8"/>
+
+    <Label text="LBP Amount:" styleClass="value-label" GridPane.columnIndex="1" GridPane.rowIndex="7"/>
+    <TextField fx:id="lbpTextField" GridPane.columnIndex="1" GridPane.rowIndex="8"/>
+
+    <Label text="Transaction Type:" styleClass="value-label" GridPane.columnIndex="0" GridPane.rowIndex="9"/>
+    <RadioButton text="Buy USD" GridPane.columnIndex="0" GridPane.rowIndex="10">
+        <toggleGroup>
+            <ToggleGroup fx:id="transactionType"/>
+        </toggleGroup>
+    </RadioButton>
+    <RadioButton text="Sell USD" GridPane.columnIndex="1" GridPane.rowIndex="10" toggleGroup="$transactionType"/>
+
+    <Button text="Add Transaction" GridPane.columnIndex="0" GridPane.rowIndex="11" GridPane.columnSpan="2" onAction="#addTransaction"/>
+    <Button text="Calculate" GridPane.columnIndex="0" GridPane.rowIndex="12" GridPane.columnSpan="2" onAction="#calculateEquivalent" />
+
+</GridPane>

@@ -1,0 +1,68 @@
+.sent-requests {
+    margin-top: 20px;
+  }
+  
+  .sent-requests__title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .sent-requests__list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sent-requests__list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sent-requests__request-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Added gap between data */
+  }
+  
+  .sent-requests__request-amount {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .sent-requests__request-recipient {
+    color: #666;
+  }
+  
+  .sent-requests__request-status {
+    color: #007bff;
+  }
+  
+  .sent-requests__request-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .sent-requests__action-button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .sent-requests__action-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .sent-requests__action-cancel {
+    background-color: #dc3545;
+  }

@@ -1,0 +1,35 @@
+.exchange-platform {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+  }
+  
+  .exchange-platform__title {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+  .exchange-platform__form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .exchange-platform__label {
+    margin-bottom: 5px;
+  }
+  
+  .exchange-platform__select,
+  .exchange-platform__input {
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .exchange-platform__button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }

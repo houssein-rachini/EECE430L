@@ -1,0 +1,9 @@
+
+db_config.py
+env/
+__pycache__/
+**/.idea/shelf/
+**/.idea/tasks.xml
+**/.idea/workspace.xml
+**/.idea/usage.statistics.xml
+
